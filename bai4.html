@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài4</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        th, td {
+          border: 1px solid #ddd;
+          padding: 8px;
+          text-align: left;
+        }
+      </style>
+</head>
+<body>
+    <h1>Hệ thống quản lí khách hàng</h1>
+    <form id="add-customer-form">
+      <label for="customer-id">Mã khách hàng:</label>
+      <input type="text" id="customer-id" name="customer-id"><br><br>
+      <label for="name">Tên khách hàng:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="phone-number">Số điện thoại:</label>
+      <input type="text" id="phone-number" name="phone-number"><br><br>
+      <label for="address">Địa chỉ:</label>
+      <input type="text" id="address" name="address"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <button type="submit">Thêm mới khách hàng</button>
+    </form>
+    <table id="customer-list">
+      <thead>
+        <tr>
+          <th>Mã khách hàng</th>
+          <th>Tên khách hàng</th>
+          <th>Số điện thoại</th>
+          <th>Địa chỉ</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody id="customer-list-body">
+      </tbody>
+    </table>
+  
+    <script src="bai4.js"></script>
+</body>
+</html>
